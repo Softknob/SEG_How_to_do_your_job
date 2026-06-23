@@ -11,7 +11,7 @@ This is a hotchpotch of stuff, but it does have some usefull info. It contains
 - licencing
 - tips and tricks
   
-  Note Jonathan Doyle, says he has this duplicated on github - 
+  Note Jonathan Doyle, says he has this duplicated on github -  can't find it in SI
 
 
 
