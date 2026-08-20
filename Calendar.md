@@ -1,5 +1,9 @@
 # Yearly Breakdown of Tasks
-
+## May
+### Lab software refresh
+Get software list from IT    
+ Download the latest verion of software to M:\software    
+Provide IT with path to latest versions
 ## June
 
 ### UAV flight for Doris Pond
