@@ -9,18 +9,18 @@ import shutil, csv, sys, os
 # namesFile="ClassList_ADGIS_2024.csv"
 # namesFile="ClassList_AESP_2024.csv"
 # namesFile='ClassList_RFW_2024_Sec1.csv'
-namesFile='ClassList_RFW_2024_Sec2.csv'
+namesFile='ClassList_TEST.csv'
 # path=r'\\seg1.ad.selkirk.ca\Users\GIS'  #ADGIS
 # path=r'\\seg1.ad.selkirk.ca\Users\SEG\AESP' #AESP
 # path=r'\\seg1.ad.selkirk.ca\Users\SEG\RFW'  #RFW
-path=r'\\seg1.ad.selkirk.ca\Users\SEG\FOR'   #FOR
+path=r'\\seg2.ad.selkirk.ca\Users\SEG\FOR'   #FOR
 
 templateFolder="template"
 
 shutil.copytree(templateFolder, os.path.join(path,"template"))
 
 
-with open(namesFile, 'r') as csvfile:
+with open(namesFile, 'r', encoding='utf-8-sig') as csvfile:
     # creating a csv reader object
     csv_reader = csv.DictReader(csvfile)
 
@@ -31,7 +31,7 @@ with open(namesFile, 'r') as csvfile:
         studentEmail=row["Email"]
         # # studentEmail=studentEmail.rstrip('\n')
         # folderName=studentEmail[:studentEmail.find('@')]
-        studentName=row["ï»¿Student Name"]
+        studentName=row["Student Name"]
         studentName=studentName.replace("-","").replace(" ","")
         studentName=studentName.split(",")
         folderName=studentName[1].lower()+studentName[0].lower()
